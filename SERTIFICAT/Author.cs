@@ -24,6 +24,10 @@ namespace SERTIFICAT
                 new Form1().Show();
                 this.Hide();
             }
+            else
+            {
+                MessageBox.Show("Некорректные данные");
+            }
         }
     }
 }

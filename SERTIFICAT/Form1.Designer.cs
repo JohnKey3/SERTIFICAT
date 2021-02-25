@@ -44,6 +44,8 @@ namespace SERTIFICAT
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,10 +56,11 @@ namespace SERTIFICAT
             this.Column1,
             this.Column2,
             this.Column3,
-            this.Column4});
-            this.dataGridView1.Location = new System.Drawing.Point(382, 49);
+            this.Column4,
+            this.Column5});
+            this.dataGridView1.Location = new System.Drawing.Point(333, 42);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(444, 270);
+            this.dataGridView1.Size = new System.Drawing.Size(515, 270);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.Click += new System.EventHandler(this.dataGridView1_Click);
@@ -170,11 +173,34 @@ namespace SERTIFICAT
             this.maskedTextBox1.Size = new System.Drawing.Size(150, 20);
             this.maskedTextBox1.TabIndex = 8;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.AutoCompleteCustomSource.AddRange(new string[] {
+            "Типа 1",
+            "Типа 2 ",
+            "Типа 3"});
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "ывфыв",
+            "234вц",
+            "лотттттт",
+            "аааааафф"});
+            this.comboBox1.Location = new System.Drawing.Point(107, 341);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 9;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "ААо";
+            this.Column5.Name = "Column5";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(847, 488);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -188,6 +214,7 @@ namespace SERTIFICAT
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -211,6 +238,8 @@ namespace SERTIFICAT
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 
