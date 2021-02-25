@@ -61,10 +61,13 @@ namespace SERTIFICAT
 
 
                 ad = Convert.ToString(dataGridView1.SelectedRows[0].Cells[4].Value);
-
-                if (ad == "234вц")
-                    comboBox1.SelectedIndex = 1;
-
+                for (int i = 0; i < 4; i++)
+                {
+                    if (ad == comboBox1.Items[i])
+                    {
+                        comboBox1.SelectedItem = comboBox1.Items[i];
+                    }
+                }
             }
             catch
             {
