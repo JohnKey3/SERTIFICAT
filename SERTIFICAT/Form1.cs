@@ -84,6 +84,7 @@ namespace SERTIFICAT
                 int b = dataGridView1.Rows.Count;
                 label4.Text = "Количетсов записей: " + (b - 1);
                 //eshe testaD
+                //aao
             }
         }
 
