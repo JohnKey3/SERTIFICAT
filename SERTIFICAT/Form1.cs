@@ -44,7 +44,7 @@ namespace SERTIFICAT
             dataGridView1.SelectedRows[0].Cells[2].Value = maskedTextBox1.Text;
             dataGridView1.SelectedRows[0].Cells[3].Value = textBox3.Text;
         }
-        //dad
+        //dadd
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
